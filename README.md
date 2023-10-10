@@ -8,9 +8,11 @@
 
 ## レジュメの作成・編集
 
-0. GitHubのアカウントを作成し，SSHキーの設定をして，自分の作ったアカウントに正常にcommit，pushができるか確認後，飯田(<flashingwind@gmail.com>)にそのメールアドレスを通知してください。このレポジトリへの権限を登録します。
-1. 適当な場所でターミナル(コマンドプロンプト)を開く
-2. クローン(初回，どちらか可能な方)
+1. 準備:
+    1. GitHubのアカウントを作成し，SSHキーの設定をして，自分の作ったアカウントに正常にcommit，pushができるか確認後，飯田(<flashingwind@gmail.com>)にそのメールアドレスを通知してください。このレポジトリへの権限を登録します。
+    2. ローカル環境でプレビューしたい場合，適当なMarkdownエディター(VSCode+Markdow用拡張など)か，[docsify cli](https://github.com/docsifyjs/docsify-cli)を使う
+3. ドキュメントを保存しておきたい場所でターミナル(コマンドプロンプト)を開く
+4. クローン(初回)
 
     ```bash
     git clone git@github.com:philomath-club/ohnishi-ronrigaku.git
@@ -28,11 +30,13 @@
     git pull
     ```
 
-2. Markdown形式で，ファイルを作成・編集
-3. コミット，GitHubへプッシュ(作業終了時)
+2. 4の操作後のフォルダー(ohnishi-ronrigaku)で，Markdown形式で，ファイルを作成・編集
+3. コミット，GitHubへプッシュ。
 
     ```bash
     git add .
-    git commit -m "I部1章追加(例)"
+    git commit -m "I部1章追加"
     git push
     ```
+
+    -mに渡す内容は編集内容に合わせて変更してください。
